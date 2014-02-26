@@ -11,5 +11,12 @@
   "boss": true,
   "eqnull": true,
   "browser": true,
-  "devel": true
+  "devel": true,
+  "globals": {
+    "Backbone": true,
+    "$": true,
+    "_": true,
+    "define": true,
+    "require":true
+  }
 }

@@ -10,7 +10,10 @@
   "unused": "vars",
   "boss": true,
   "eqnull": true,
-  "node": true,
-  "jquery":true,
-  "browser": true
+  "browser": true,
+  "devel": true,
+  "globals": {
+    "define": true,
+    "require": true
+  }
 }
