@@ -1,0 +1,7 @@
+<% if (photo.dataUri !== "undefined") { %>
+  <div class="photo">
+    <img src="<%= photo.dataUri %>"/>
+  </div>
+<% } else { %>
+  <div class="error">Photo not found!</div>
+<% } %>
