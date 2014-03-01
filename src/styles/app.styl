@@ -1,10 +1,11 @@
+@import 'nib'
+@import 'shared'
+
 /* ------------------ */
 /*   Primary styles   */
 /* ------------------ */
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -12,7 +13,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background: #F8F8F8;
+  background: $background_color;
 }
 
 a {
@@ -91,7 +92,7 @@ h1 {
 /* ------------------ */
 
 header {
-  background: #3b1128;
+  background: $header_background;
   padding: 1.0em 0 .6em;
   margin-bottom: 10em /*3.5em*/;
   text-align: center;
@@ -99,8 +100,8 @@ header {
 
 .logo a {
   display: inline-block;
-  border-top: 1px solid #ae99a3;
-  border-bottom: 1px solid #ae99a3;
+  border-top: 1px solid $header_logo;
+  border-bottom: 1px solid $header_logo;
   padding: .2em;
 }
 
@@ -124,7 +125,7 @@ header {
 
 /* two col layout */
 .side-bar {
-  background: #f8f8f8;
+  background: $background_color;
   position: fixed;
   width: 100%;
   left: 0;
@@ -137,12 +138,7 @@ header {
   max-width: 40%;
   border: 12px solid #fff;
   border-bottom-width: 42px;
-  -webkit-box-shadow: 10px 10px 35px #ccc;
   box-shadow: 10px 10px 35px #ccc;
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
   transform: rotate(3deg);
 }
 
@@ -176,12 +172,7 @@ ul.thumbnails li a.thumbnail {
   padding: 4px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -211,8 +202,6 @@ ul.thumbnails li a.thumbnail:hover {
 .webcam video {
   width: 100%;
   border: 2px solid #06d1f0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -235,12 +224,7 @@ ul.thumbnails li a.thumbnail:hover {
   padding: 1em;
   background: #ebebeb;
   font-size: 16px;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   line-height: 1;
   width: 50%;
